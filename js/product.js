@@ -1,46 +1,3 @@
-// import { products } from "./data.js";
-
-// // Read ?id= from URL
-// const urlParams = new URLSearchParams(window.location.search);
-// const productId = parseInt(urlParams.get("id"));
-
-// // Target where HTML will be inserted
-// const productSection = document.querySelector(".product-section");
-
-// // If no ID or invalid ID → simple fallback message
-// if (!productId) {
-//     productSection.innerHTML = "<p>Invalid product.</p>";
-//     throw new Error("Invalid product ID in URL");
-// }
-
-// // Find product by ID
-// const product = products.find(p => p.id === productId);
-
-// // If product not found
-// if (!product) {
-//     productSection.innerHTML = "<p>Product not found.</p>";
-//     throw new Error("Product not found");
-// }
-
-// // Insert product details into page
-// productSection.innerHTML = `
-//     <div class="product-left">
-//         <img src="${product.image}" alt="${product.name}">
-//     </div>
-
-//     <div class="product-right">
-//         <h1 class="product-title">${product.name}</h1>
-//         <p class="product-category">Category: ${product.category}</p>
-//         <h2 class="product-price">₹${product.price}</h2>
-
-//         <p class="product-desc">${product.desc}</p>
-
-//         <div class="product-buttons">
-//             <button class="btn-buy">Buy Now</button>
-//             <button class="btn-cart">Add to Cart</button>
-//         </div>
-//     </div>
-// `;
 import { products } from "./data.js";
 
 /* ===== helpers (cart in localStorage) ===== */
@@ -77,6 +34,7 @@ if (!root) {
   if (!product) {
     root.innerHTML = "<div style='padding:40px'>Product not found.</div>";
   } else {
+    document.title = product.name + " | Product";
     root.innerHTML = `
       <div class="product-left">
         <img src="${product.image}" alt="${product.name}">

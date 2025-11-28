@@ -25,7 +25,7 @@ filteredProducts.forEach(p => {
     const card = document.createElement("a");
     card.className = "catcard"; 
     card.href = `product.html?id=${p.id}`;
-
+ 
     card.innerHTML = `
         <div class="cardmedia">
             <img src="${p.image}" alt="${p.name}">
