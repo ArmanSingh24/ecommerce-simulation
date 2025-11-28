@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Product</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        /* PRODUCT PAGE LAYOUT */
+
+        .product-section {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        /* LEFT SIDE IMAGE */
+        .product-left img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* RIGHT SIDE CONTENT */
+        .product-right .product-title {
+            margin: 0 0 10px;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .product-category {
+            margin: 5px 0;
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        .product-price {
+            margin: 10px 0 15px;
+            font-size: 1.6rem;
+            color: #0ea5a4;
+            font-weight: 700;
+        }
+
+        .product-desc {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* BUTTONS */
+        .product-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .btn-buy,
+        .btn-cart {
+            padding: 12px 20px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .btn-buy {
+            background-color: #0ea5a4;
+        }
+
+        .btn-cart {
+            background-color: #111827;
+        }
+
+        /* RELATED PRODUCTS */
+        .related-title {
+            max-width: 1200px;
+            margin: 20px auto 10px;
+            padding: 0 20px;
+            font-size: 1.3rem;
+            font-weight: 600;
+        }
+
+        .related-grid {
+            max-width: 1200px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="logo"><a href="index.html" style="text-decoration: none; color: white;">Shop</a></span>
+        <ul class="catList">
+            <li><a href="category.html?type=new">New</a></li>
+            <li><a href="category.html?type=men">Men</a></li>
+            <li><a href="category.html?type=women">Women</a></li>
+            <li><a href="category.html?type=sports">Sports</a></li>
+            <li><a href="category.html?type=lifestyle">Lifestyle</a></li>
+            <li><a href="category.html?type=sale">Sale</a></li>
+        </ul>
+        <ul class="user">
+            <li><a href="#liked"><i class="fa fa-heart"></i></a></li>
+            <li>
+                <a href="cart.html" class="cart-icon" style="text-decoration: none; color: white;">
+                    <i class="fa fa-cart-shopping"></i>
+                    <span class="cart-count">(0)</span>
+                </a>
+            </li>
+            <li><a href="#profile"><i class="fa fa-user"></i></a></li>
+        </ul>
+    </nav>
+
+    <div class="hero" style="background-image: url(assets/img/8.jpeg);">
+        <div class="overlay"></div>
+        <div class="herocontent">
+            <h1 class="herotitle">Discover Our Collection</h1>
+            <p class="herosub">Browse products curated specially for you.</p>
+        </div>
+    </div>
+
+    <!-- JS WILL INSERT CONTENT HERE -->
+    <div class="product-section">
+
+        <div class="product-left">
+            <img src="assets/img/1.avif" alt="Product Image">
+        </div>
+
+        <div class="product-right">
+            <h1 class="product-title">Product Name</h1>
+            <p class="product-category">Category: men</p>
+            <h2 class="product-price">₹999</h2>
+
+            <p class="product-desc">
+                This is a sample product description. JavaScript will replace this text later.
+            </p>
+
+            <div class="product-buttons">
+                <button class="btn-buy">Buy Now</button>
+                <button class="btn-cart">Add to Cart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <footer>
+            <div class="footgrid">
+                <div>
+                    <h4 class="foottitle">About</h4>
+                    <p class="foottext">We curate quality pieces for everyday living. Fast shipping and easy returns</p>
+                </div>
+
+                <div>
+                    <h4 class="foottitle">Help</h4>
+                    <ul class="footlinks">
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="foottitle">Follow</h4>
+                    <ul class="footlinks">
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Facebook</a></li>
+                    </ul>
+                </div>
+        </footer>
+    </div>
+    <div class="footerbottom">
+        <span>© 2025 Shop. All rights reservedd.</span>
+    </div>
+    <script type="module" src="js/product.js"></script>
+    <script type="module" src="js/global.js"></script>
+
+</body>
+
+</html>

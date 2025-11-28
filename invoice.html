@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Invoice</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body { background:#f7f7f8; }
+    .invoice-wrap { max-width:800px; margin:60px auto; padding:20px; background:#fff; border-radius:10px; box-shadow:0 6px 20px rgba(15,23,42,0.06); }
+    .invoice-head { display:flex; justify-content:space-between; align-items:center; gap:10px; margin-bottom:12px; }
+    .invoice-meta { color:#6b7280; font-size:0.95rem; }
+    .items-table { width:100%; border-collapse:collapse; margin-top:12px; }
+    .items-table th, .items-table td { text-align:left; padding:8px 6px; border-bottom:1px solid #efefef; }
+    .total-row { text-align:right; font-weight:700; color:#0ea5a4; font-size:1.05rem; }
+    .invoice-actions { margin-top:12px; display:flex; gap:10px; }
+    .btn { padding:10px 12px; border-radius:8px; border:0; cursor:pointer; font-weight:700; }
+    .btn-print { background:#0ea5a4; color:#fff; }
+    .btn-home { background:#111827; color:#fff; }
+  </style>
+</head>
+<body>
+
+  <div class="invoice-wrap" id="invoice-root">
+    <div style="text-align:center; color:#6b7280">Loading invoice...</div>
+  </div>
+  <script type="module" src="js/invoice.js"></script>
+  <script type="module" src="js/global.js"></script>
+</body>
+</html>
