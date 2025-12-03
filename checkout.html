@@ -8,128 +8,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Checkout</title>
   <link rel="stylesheet" href="css/style.css" />
-  <style>
-    /* Page-scoped checkout styles (won't break other pages) */
-    .checkout-grid {
-      display: grid;
-      grid-template-columns: 1fr 380px;
-      gap: 28px;
-      align-items: start;
-    }
-
-    .card {
-      background: #fff;
-      border-radius: 10px;
-      padding: 40px;
-      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
-    }
-
-    .card h2 {
-      margin: 0 0 12px;
-      font-size: 1.25rem;
-    }
-
-    form .row {
-      margin-bottom: 12px;
-    }
-
-    label {
-      display: block;
-      font-weight: 600;
-      margin-bottom: 6px;
-      font-size: 0.95rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"],
-    textarea,
-    select {
-      width: 100%;
-      padding: 10px 12px;
-      border-radius: 8px;
-      border: 1px solid #e6e6e6;
-      font-size: 0.95rem;
-    }
-
-    textarea {
-      min-height: 90px;
-      resize: vertical;
-    }
-
-    .small {
-      font-size: 0.9rem;
-      color: #6b7280;
-    }
-
-    /* summary */
-    .summary-row {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-      align-items: center;
-      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
-    }
-
-    .summary-total {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 12px;
-      font-weight: 700;
-      font-size: 1.05rem;
-      color: #0ea5a4;
-    }
-
-    .actions {
-      margin-top: 14px;
-      display: flex;
-      gap: 12px;
-    }
-
-    .btn-primary,
-    .btn-ghost {
-      padding: 12px 14px;
-      border-radius: 8px;
-      border: 0;
-      cursor: pointer;
-      font-weight: 700;
-    }
-
-    .btn-primary {
-      background: #0ea5a4;
-      color: #fff;
-    }
-
-    .btn-ghost {
-      background: #111827;
-      color: #fff;
-    }
-
-    /* thank you section (replaces form on success) */
-    .thankyou {
-      text-align: center;
-      padding: 30px;
-    }
-
-    .thankyou h2 {
-      margin-bottom: 8px;
-    }
-
-    .thank-actions {
-      margin-top: 18px;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    /* responsive */
-    @media (max-width:980px) {
-      .checkout-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
   <main class="section">
@@ -220,36 +99,36 @@
     </div>
   </main>
 
-    <div class="footer">
-        <footer>
-            <div class="footgrid">
-                <div>
-                    <h4 class="foottitle">About</h4>
-                    <p class="foottext">We curate quality pieces for everyday living. Fast shipping and easy returns</p>
-                </div>
+  <div class="footer">
+    <footer>
+      <div class="footgrid">
+        <div>
+          <h4 class="foottitle">About</h4>
+          <p class="foottext">We curate quality pieces for everyday living. Fast shipping and easy returns</p>
+        </div>
 
-                <div>
-                    <h4 class="foottitle">Help</h4>
-                    <ul class="footlinks">
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Privacy</a></li>
-                        <li><a href="#">Terms</a></li>
-                    </ul>
-                </div>
+        <div>
+          <h4 class="foottitle">Help</h4>
+          <ul class="footlinks">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
 
-                <div>
-                    <h4 class="foottitle">Follow</h4>
-                    <ul class="footlinks">
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ul>
-                </div>
-        </footer>
-    </div>
+        <div>
+          <h4 class="foottitle">Follow</h4>
+          <ul class="footlinks">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+          </ul>
+        </div>
+    </footer>
+  </div>
 
-    <div class="footerbottom">
-        <span>© 2025 Shop. All rights reservedd.</span>
-    </div>
+  <div class="footerbottom">
+    <span>© 2025 Shop. All rights reservedd.</span>
+  </div>
   <script type="module" src="js/checkout.js"></script>
   <script type="module" src="js/global.js"></script>
 </body>
