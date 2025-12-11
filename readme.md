@@ -89,3 +89,8 @@ Ideas for improvement:
 ## 📜 License
 
 MIT License — free for personal and commercial use.
+
+---
+
+Made with ❤️
+by Arman Singh
