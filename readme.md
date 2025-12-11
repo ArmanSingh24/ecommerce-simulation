@@ -20,6 +20,10 @@ Features include dynamic product rendering, persistent cart management, and reus
 
 ![Cart Demo](./demo/cart.png)
 
+### 🧾 Generated Invoice
+
+![Invoice Demo](./demo/invoice.png)
+
 ---
 
 ## 🚀 Features
