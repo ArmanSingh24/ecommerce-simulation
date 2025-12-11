@@ -42,6 +42,10 @@ nav {
   cursor: default;
   color: #ffffff;
 }
+.logo a {
+  color: inherit;        
+  text-decoration: none; 
+}
 
 .catList {
   list-style-type: none;
